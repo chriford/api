@@ -61,6 +61,9 @@ def delete_view(pk):
     except:
         return redirect(url_for('home_view'))
 
+@app.route('/post', methods=['POST', 'GET'])
+def  post_view():
+	return "Add something here"
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
